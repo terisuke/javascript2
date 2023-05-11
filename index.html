@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヲタ芸採点DX ver.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contents">
+        <div class="main">
+            <p class="audio">
+                <button id="play">Play</button>
+                <button id="pause">Pause</button>
+                <button id="stop">Stop</button>
+            </p>
+            <div class="givePoints screen" id="givePoints1">
+                <div id="scoreboard">
+                    <div id="title">
+                        SCORE:
+                    </div>
+                    <div id="tag">
+                        0
+                    </div>
+                    <div id="score">
+                        0
+                    </div>
+                    <div id="WebGL-output">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="givePoints key" id="givePoints2">Tiger</div>
+            <div class="givePoints key" id="givePoints3">PPPH</div>
+            <div class="givePoints key" id="givePoints4">kecak</div>
+            <div class="givePoints key" id="givePoints5">Romance</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module">
+        import yourFunction from './index.js';
+        window.onload = yourFunction;
+    </script>
+</body>
+
+</html>

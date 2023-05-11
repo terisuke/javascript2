@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #333;
+    font-family: 'Oswald', sans-serif;
+    color: #CCC;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+
+}
+
+.screen {
+    height: 630px;
+}
+
+#scoreboard {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#score {
+    transform-style: preserve-3d;
+    font-size: 40px;
+    line-height: 20px;
+}
+
+#tag {
+    transform-style: preserve-3d;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    line-height: 50px;
+}
+
+#title {
+    transform-style: preserve-3d;
+    position: absolute;
+    top: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100px;
+    line-height: 100px;
+}
+
+button {
+    height: 100px;
+    line-height: 100px;
+    font-size: 80px;
+    display: inline-block;
+    width: 30%;
+    color: white;
+    background-color: black;
+    border: white solid 1px;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+#center * {
+    pointer-events: none;
+}
+
+.givePoints {
+    cursor: pointer;
+}
+
+.key {
+    width: 22%;
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    background-color: green;
+    text-align: center;
+    border: white solid 1px;
+    margin: 0 5px;
+}
+
+.key:hover {
+    background-color: greenyellow;
+}
+
+canvas {
+    z-index: 100;
+}
