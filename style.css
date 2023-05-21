@@ -1,21 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
+.contents {
     background: #333;
     font-family: 'Oswald', sans-serif;
     color: #CCC;
     text-shadow: 1px 1px 5px black;
-    text-align: center;
-
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .screen {
-    height: 630px;
+    height: 100%;
+    width: auto;
 }
 
 #scoreboard {
@@ -102,6 +98,10 @@ button:hover {
     background-color: greenyellow;
 }
 
-canvas {
+.videoControls {
     z-index: 100;
+}
+
+.WebGL-output {
+    padding-top: 100px;
 }

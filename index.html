@@ -11,41 +11,38 @@
 
 <body>
     <div class="contents">
-        <div class="main">
-            <p class="audio">
-                <button id="play">Play</button>
-                <button id="pause">Pause</button>
-                <button id="stop">Stop</button>
-            </p>
-            <div class="givePoints screen" id="givePoints1">
-                <div id="scoreboard">
-                    <div id="title">
-                        SCORE:
-                    </div>
-                    <div id="tag">
-                        0
-                    </div>
-                    <div id="score">
-                        0
-                    </div>
-                    <div id="WebGL-output">
-                    </div>
+        <p class="videoControls">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+        </p>
+        <div class="givePoints screen" id="givePoints1">
+            <div id="videoContainer"></div>
+            <div id="scoreboard">
+                <div id="title">
+                    SCORE:
+                </div>
+                <div id="tag">
+                    0
+                </div>
+                <div id="score">
+                    0
+                </div>
+                <div class="btn">
+                    <div class="givePoints key" id="givePoints2">Tiger</div>
+                    <div class="givePoints key" id="givePoints3">PPPH</div>
+                    <div class="givePoints key" id="givePoints4">kecak</div>
+                    <div class="givePoints key" id="givePoints5">Romance</div>
                 </div>
             </div>
-        </div>
-        <div class="btn">
-            <div class="givePoints key" id="givePoints2">Tiger</div>
-            <div class="givePoints key" id="givePoints3">PPPH</div>
-            <div class="givePoints key" id="givePoints4">kecak</div>
-            <div class="givePoints key" id="givePoints5">Romance</div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="script.js"></script>
-    <script type="module">
+    <!--<script type="module">
         import yourFunction from './index.js';
         window.onload = yourFunction;
-    </script>
+    </script>-->
 </body>
 
 </html>
