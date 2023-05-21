@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="WebGL-output">
+    </div>
+    <div class="btn">
+        <div class="givePoints key" id="givePoints2">Tiger</div>
+        <div class="givePoints key" id="givePoints3">PPPH</div>
+        <div class="givePoints key" id="givePoints4">kecak</div>
+        <div class="givePoints key" id="givePoints5">Romance</div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module">
+        import yourFunction from './index.js';
+        window.onload = yourFunction;
+    </script>
+</body>
+
+</html>

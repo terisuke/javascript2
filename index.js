@@ -50,7 +50,7 @@ function yourFunction() {
 
     const loader = new FBXLoader();
 
-    loader.load('PPPH.fbx', function (object) {
+    loader.load('Romance.fbx', function (object) {
         object.scale.set(1, 1, 1)
         //シーン内の特定のオブジェクトのアニメーション用のプレーヤー(アニメーションの調整)
         mixer = new THREE.AnimationMixer(object);

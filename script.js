@@ -1,6 +1,10 @@
 window.addEventListener("load", () => {
-    // オーディオを取得
-    const audio = new Audio("idolのコピー.m4a");
+    // ビデオを取得
+    const video = document.createElement("video");
+    video.src = "YOASOBI「アイドル」2.mp4"
+    // ビデオをvideoContainerに追加
+    const videoContainer = document.getElementById("videoContainer");
+    videoContainer.appendChild(video);
 
     // 再生、停止ボタン
     const play = document.getElementById("play");
@@ -15,7 +19,7 @@ window.addEventListener("load", () => {
     window.playing = false;
     // 再生機能
     play.addEventListener("click", () => {
-        audio.play();
+        video.play();
         //タイムアウトのクリア
         if (pointChangeTimeoutId) {
             clearTimeout(pointChangeTimeoutId);
@@ -38,16 +42,16 @@ window.addEventListener("load", () => {
 
     // 一時停止機能
     pause.addEventListener("click", () => {
-        audio.pause();
+        video.pause();
         //停止中
         playing = false;
         clearTimeout(pointChangeTimeoutId);
     });
     // 停止（巻き戻し）機能
     stop.addEventListener("click", () => {
-        audio.pause();
+        video.pause();
         // 曲の先頭に再生開始位置を戻す
-        audio.currentTime = 0;
+        video.currentTime = 0;
         //停止中
         playing = false;
         //スコアのリセット
@@ -57,7 +61,7 @@ window.addEventListener("load", () => {
         clearTimeout(pointChangeTimeoutId);
     });
     //再生終了時にカウントもストップ
-    audio.addEventListener("ended", () => {
+    video.addEventListener("ended", () => {
         //停止中
         playing = false;
     });
